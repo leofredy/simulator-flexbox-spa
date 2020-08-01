@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1 class="title-flex">Layouts com FlexBox</h1>
+    <div root>
+
+        
+
+        <div>
+            <div class="apresentation-propriedades-container-flex apresentation-container-flex">
+                <div class="item-flex-one apresentation-item-flex">1</div>
+                <div class="item-flex-two apresentation-item-flex">2</div>
+                <div class="item-flex-three apresentation-item-flex">3</div>
+            </div>
+        </div>
+
+
+        <div class="propriedades-flexbox">
+            <div>
+                <form>
+                    <fieldset class="fieldset-propriedades">
+                        <legend>Propriedades do Container</legend>
+                        <div class="option">
+                            <label for="flex-wrap">display</label>
+                            <select name="flex-display" class="option-flex" id="display">
+                                <option value="flex" selected>flex</option>
+                            </select>
+                        </div>
+                        <div class="description-propriedades description-propriedades-display">
+                            <div class="arrow"></div>
+                            <h2 class="description-propriedades-description">
+                                Esta propriedade permite o uso do das propriedade flex
+                            </h2>
+                        </div>
+                        <div class="option">
+                            <label for="flex-wrap">flex-direction</label>
+                            <select name="flex-direction" class="option-flex" id="flex-direction">
+                                <option value="row" selected>row</option>
+                                <option value="row-reverse">row-reverse</option>
+                                <option value="column">column</option>
+                                <option value="column-reverse">column-reverse</option>
+                            </select>
+                        </div>
+                        <div class="description-propriedades description-propriedades-flex-direction">
+                            <div class="arrow"></div>
+                            <h2 class="description-propriedades-description">
+                                Define o eixo principal e a direção
+                            </h2>
+                        </div>
+                        <div class="option">
+                            <label for="flex-wrap">flex-wrap</label>
+                            <select name="flex-wrap" class="option-flex" id="flex-wrap">
+                                <option value="nowrap" selected>nowrap</option>
+                                <option value="wrap">wrap</option>
+                                <option value="wrap-reverse">wrap-reverse</option>
+                            </select>
+                        </div>
+                        <div class="description-propriedades description-propriedades-flex-wrap">
+                            <div class="arrow"></div>
+                            <h2 class="description-propriedades-description">
+                                Define o comportamento do conteudo quando maior que o container
+                            </h2>
+                        </div>
+                        <div class="option">
+                            <label for="justify-content">justify-content</label>
+                            <select name="justify-content" class="option-flex" id="justify-content">
+                                <option value="none" selected>none</option>
+                                <option value="flex-start">flex-start</option>
+                                <option value="flex-end">flex-end</option>
+                                <option value="center">center</option>
+                                <option value="space-between">space-between</option>
+                                <option value="space-around">space-around</option>
+                            </select>
+                        </div>
+                        <div class="description-propriedades description-propriedades-justify-content">
+                            <div class="arrow"></div>
+                            <h2 class="description-propriedades-description">
+                                Define o alinhamento do eixo principal
+                            </h2>
+                        </div>
+                        <div class="option">
+                            <label for="align-items">align-items</label>
+                            <select name="align-items" class="option-flex" id="align-items">
+                                <option value="none" selected>none</option>
+                                <option value="flex-start">flex-start</option>
+                                <option value="center">center</option>
+                                <option value="stretch">stretch</option>
+                                <option value="baseline">baseline</option>
+                            </select>
+                        </div>
+                        <div class="description-propriedades description-propriedades-align-items">
+                            <div class="arrow"></div>
+                            <h2 class="description-propriedades-description">
+                                Define o alinhamento do eixo perpendicular ao principal
+                            </h2>
+                        </div>
+                        <div class="option">
+                            <label for="align-content">align-content</label>
+                            <select name="align-content" class="option-flex" id="align-content">
+                                <option value="none" selected>none</option>
+                                <option value="flex-start">flex-start</option>
+                                <option value="flex-end">flex-end</option>
+                                <option value="stretch">stretch</option>
+                                <option value="space-between">space-between</option>
+                                <option value="space-around">space-around</option>
+                            </select>
+                        </div>
+                        <div class="description-propriedades description-propriedades-align-content">
+                            <div class="arrow"></div>
+                            <h2 class="description-propriedades-description">
+                                Define o alinhamento entre as linhas de conteúdo dentro do container. Necessario mais de uma linha de conteúdo
+                            </h2>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+
+
+
+        
+            <div class="propriedades-itens">
+                <form>
+                    <fieldset class="fieldset-propriedades fieldset-propriedades-itens">
+                        <legend>Propriedades do Item</legend>
+                        <div class="option-item">
+                            <fieldset class="fieldset-propriedade-itens-order">
+                                <legend>Selecione um item</legend>
+                                <label for="item1">item 1</label>
+                                <input type="radio" name="itens" id="item1">
+                                <label for="item2">item 2</label>
+                                <input type="radio" name="itens" id="item2">
+                                <label for="item3">item 3</label>
+                                <input type="radio" name="itens" id="item3">
+                                <label for="item4">item 4</label>
+                                <input type="radio" name="itens" id="item4">
+                                <label for="item5">item 5</label>
+                                <input type="radio" name="itens" id="item5">                                                                        
+                            </fieldset>
+                        </div>
+                        <div class="option">
+                            <label for="order">order</label>
+                            <select name="item-order" class="option-flex" id="order">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="description-propriedades description-propriedades-order">
+                            <div class="arrow"></div>
+                            <h2 class="description-propriedades-description">
+                                Reposiciona a ordem de exibição do elemento
+                            </h2>
+                        </div>
+                        <div class="option">
+                            <label for="flex-grow">flex-grow</label>
+                            <select name="flex-grow" class="option-flex" id="flex-grow">
+                                <option value="none" selected>default (1)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="description-propriedades description-propriedades-flex-grow">
+                            <div class="arrow"></div>
+                            <h2 class="description-propriedades-description">
+                                Define como o elemento deve ser maior em relação aos outros se necessário
+                            </h2>
+                        </div>
+                        <div class="option">
+                            <label for="flex-shrink">flex-shrink</label>
+                            <select name="flex-shrink" class="option-flex" id="flex-shrink">
+                                <option value="none" selected>default (1)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="description-propriedades description-propriedades-flex-shrink">
+                            <div class="arrow"></div>
+                            <h2 class="description-propriedades-description">
+                                Define como o elemento deve ser menor em relação aos outros se necessário
+                            </h2>
+                        </div>
+                        <div class="option">
+                            <label for="flex-basis">flex-basis</label>
+                            <select name="flex-basis" class="option-flex" id="flex-basis">
+                                <option value="none" selected>default</option>
+                                <option value="30">30%</option>
+                                <option value="35">35%</option>
+                                <option value="40">40%</option>
+                                <option value="50">50%</option>
+                            </select>
+                        </div>
+                        <div class="description-propriedades description-propriedades-flex-basis">
+                            <div class="arrow"></div>
+                            <h2 class="description-propriedades-description">
+                                Define o tamanho padrão que o elemento deve conter antes do espaço do container ser distribuido
+                            </h2>
+                        </div>
+                        <div class="option">
+                            <label for="align-self">align-self</label>
+                            <select name="align-self" class="option-flex" id="align-self">
+                                <option value="none" selected>none</option>
+                                <option value="flex-start">flex-start</option>
+                                <option value="flex-end">flex-end</option>
+                                <option value="stretch">stretch</option>
+                                <option value="center">center</option>
+                                <option value="baseline">baseline</option>
+                            </select>
+                        </div>
+                        <div class="description-propriedades description-propriedades-align-self">
+                            <div class="arrow"></div>
+                            <h2 class="description-propriedades-description">
+                                Permite sobreescrever o alinhamento do elemento definido pelo align-items
+                            </h2>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

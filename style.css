@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+label{
+    font-size: 16px;
+    font-weight: 800;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+form{
+    height: 100%;
+}
+
+.apresentation-container-flex{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(14, 63, 14);
+    border: 1px solid black;
+}
+.apresentation-item-flex{
+    background-color: rgb(255, 37, 37);
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.apresentation-propriedades-container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.propriedades-flexbox{
+    display: flex;
+}
+.fieldset-propriedades {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.fieldset-propriedades-itens{
+    margin-left: 10px;
+}
+.fieldset-propriedade-itens-order{
+    padding: 10px;
+}
+.option{
+    width: 200px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.option-flex{
+    border: 0;
+    background: url(./assets/sprites/ico-seta-select.gif) no-repeat #354880;
+    background-position: 160px center;
+    width: 215px;
+    height: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 0px 5px 0px 5px;
+    color: #fff;
+    text-indent: 0.01px;
+}
+.description-propriedades {
+    position: absolute;
+    background-color: rgb(49, 43, 43);
+    width: 215px;
+    max-width: 215px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: none;
+}
+.description-propriedades-display{
+    top: 97px;
+}
+.description-propriedades-flex-direction{
+    top: 165px;
+}
+.description-propriedades-flex-wrap{
+    top: 232px;
+}
+.description-propriedades-justify-content{
+    top: 299px;
+}
+.description-propriedades-align-items{
+    top: 366px;
+}
+.description-propriedades-align-content {
+    top: 433px;
+
+}
+.description-propriedades-order{
+    top: 177px;
+}
+.description-propriedades-flex-grow{
+    top: 245px;
+}
+.description-propriedades-flex-shrink{
+    top: 312px;
+}
+.description-propriedades-flex-basis{
+    top: 379px;
+}
+.description-propriedades-align-self{
+    top: 446px;
+
+}
+.arrow {
+    position: absolute;
+    left: 107px;
+    top: -2px;
+    z-index: -1;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: rgb(49, 43, 43);
+}
+.description-propriedades-description {
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
